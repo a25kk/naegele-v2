@@ -1,0 +1,70 @@
+<dl class="portlet portletCollection"
+    i18n:domain="plone"
+    tal:define="collection_url view/collection_url;
+                plone_view context/@@plone;
+                toLocalizedTime nocall:plone_view/toLocalizedTime;
+                getIcon nocall:plone_view/getIcon;
+                scale view/data/image_dimensions;
+                display_body view/data/display_body">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a class="portlet_title" tal:omit-tag="not:view/data/show_more">
+            <span tal:content="view/data/header" />
+        </a>
+        <a class="portlet_subtitle" tal:omit-tag="not:view/data/show_more">
+            <span tal:content="view/data/subtitle" />
+        </a>
+        <span class="portletTopRight"></span>
+    </dt>
+    <tal:events tal:repeat="obj view/results">
+    <dd class="portletItem"
+        tal:define="oddrow repeat/obj/odd;
+                    item_icon python:getIcon(obj);
+                    item obj/getObject"
+        tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+        
+          <tal:x tal:define="image item/image|nothing;" 
+           	tal:condition="python:image and image.size > 0" >            
+       	  <a href="#"
+           class="item_image"
+           tal:attributes="href string:${obj/getURL}/view;">
+                          
+        
+            		<img  tal:replace="structure python: item.tag(scale=scale, css_class='newsImage')" src="" alt="" />
+                         
+       		</a>
+       		</tal:x>
+			<h3 class="item_title">
+	         	 <a href="#"  tal:attributes="href string:${obj/getURL}/view; 
+	         	 							 title obj/Title;"
+	         	 			  tal:content="obj/Title">        
+	             Title
+	             </a>
+	          </h3>
+            <div class="item_date"
+                  tal:condition="view/data/show_dates"
+                  tal:content="python:toLocalizedTime(obj.Date)">
+                Date
+            </div>
+            <div class="item_description" tal:content="obj/Description">
+            
+            </div>
+            <div tal:condition="view/data/display_body" class="body">
+            	<tal:x tal:condition="python:hasattr(item, 'getText')"  tal:content="structure item/getText">
+            	</tal:x>
+            
+            </div>
+            <div class="portletFooter" tal:condition="python:not(display_body) or not(hasattr(item, 'getText')) or not(item.getText())">
+			<span>
+	        <a tal:attributes="href string:${obj/getURL}/view;" i18n:translate="more_url">
+	             More&hellip;
+	             </a>
+	        </span>
+	        </div>
+    </dd>
+    </tal:events>
+    
+
+
+</dl>

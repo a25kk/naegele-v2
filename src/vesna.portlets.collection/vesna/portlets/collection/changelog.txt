@@ -1,0 +1,2 @@
+1.0.3 fixed bug : portal_view_customizations displays the collection template inherited from original collection portlet instead of custom one. 
+1.0.2 added support of collective.contentleadimage.

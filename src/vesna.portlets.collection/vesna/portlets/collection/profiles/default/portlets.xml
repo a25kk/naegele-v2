@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="vesna.portlets.collection.collection_portlet"
+   title="PCollection portlet"
+   description=""
+   />
+
+</portlets>
