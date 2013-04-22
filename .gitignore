@@ -1,35 +1,29 @@
-*.py[cod]
-
-# C extensions
-*.so
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-lib
-lib64
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
 *.mo
-
-# Mr Developer
+*.egg-info
+*.egg
+*.EGG
+*.EGG-INFO
+bin
+build
+develop-eggs
+coverage
+downloads
+eggs
+fake-eggs
+parts
+dist
+.installed.cfg
 .mr.developer.cfg
-.project
-.pydevproject
+var
+.hg
+.bzr
+.svn
+*.pyc
+*.pyo
+*-ck.js
+etc/**/*
+src/sauna.reload
+src/Products.windowZ
+.DS_Store
+known-good-versions.cfg
+src/vwc.toolbar
