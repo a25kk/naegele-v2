@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='kk.naegele',
+setup(name='kk.naegele-v2',
       version=version,
       description="Naegele Diazo Plone Theme",
       long_description=open("README.txt").read() + "\n" +
@@ -15,7 +15,7 @@ setup(name='kk.naegele',
         "Programming Language :: Python",
         ],
       keywords='',
-      author='Vorwaerts Werbung GbR',
+      author='Kreativkombinat GbR',
       author_email='info@kreativkombinat.de',
       url='http://dist.kreativkombinat.de',
       license='GPL',
@@ -27,6 +27,7 @@ setup(name='kk.naegele',
           'setuptools',
           'plone.app.theming',
           'plone.app.themingplugins',
+          'plone.app.toolbar',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

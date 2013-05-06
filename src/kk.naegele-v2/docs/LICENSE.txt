@@ -1,4 +1,4 @@
-  kk.naegele is copyright Kreativkombinat GbR
+  kk.naegele-v2 is copyright Kreativkombinat GbR
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

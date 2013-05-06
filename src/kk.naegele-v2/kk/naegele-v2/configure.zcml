@@ -4,7 +4,7 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="kk.naegele">
+    i18n_domain="kk.naegele-v2">
 
   <five:registerPackage package="." initialize=".initialize" />
 
@@ -12,9 +12,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="kk.naegele"
+      title="kk.naegele-v2"
       directory="profiles/default"
-      description="Installs the kk.naegele package"
+      description="Installs the kk.naegele-v2 package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
