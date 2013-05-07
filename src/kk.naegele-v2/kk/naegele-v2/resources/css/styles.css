@@ -5586,7 +5586,8 @@ body #wrapper #edit-bar {
 .navbar .nav > li > a {
   color: #000000;
   line-height: 20px;
-  padding: 12.5px 10px;
+  padding: 5px 10px 10px 10px;
+  border: 0px solid red;
 }
 #main-nav {
   font-family: Times;
@@ -5598,9 +5599,18 @@ body #wrapper #edit-bar {
   border: 1px solid red;
 }
 #above-content {
-  border: 1px solid red !important;
-  display: inline-block;
-  height: 300px;
+  border: 0px solid red !important;
+}
+#above-content #portal-breadcrumbs {
+  display: none;
+}
+.carousel-text {
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  padding: 0%;
+  position: absolute;
+  width: 100%;
 }
 #portlets-below {
   border: 1px solid red !important;

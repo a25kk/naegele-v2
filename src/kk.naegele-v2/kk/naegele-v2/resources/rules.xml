@@ -39,10 +39,10 @@
 
 
         <!-- Custom favicon implementation -->
-        <!--<drop content="link[@type='image/x-icon']" />
+        <drop content="link[@type='image/x-icon']" />
         <after theme="/html/head">
-            <link rel="shortcut icon" href="/++theme++folia.jmstheme/img/favicon.ico" type="images/x-icon" />
-        </after>-->
+            <link rel="shortcut icon" href="/++theme++kk.naegele-v2/img/favicon.ico" type="images/x-icon" />
+        </after>
 
         <!--<after theme="/html/body"
             content="//div[@data-iframe='plone-toolbar']" />-->
@@ -74,27 +74,17 @@
         <replace css:content="#portal-globalnav li"
             css:theme-children="#main-nav" />
 
-        <!-- Breadcrumbs -->
-        <replace css:content-children='#portal-breadcrumbs'
-            css:theme-children='#breadcrumbs' />
-
         <replace css:content-children="#bannerbar" 
             css:theme-children="#intro-content"
             css:if-content="#bannerbar" />
 
-        <replace css:content-children="#viewlet-above-content-body" 
-            css:theme-children="#above-content" />
-
-        <!-- Document Content -->
-        <replace css:content-children="#content" 
-            css:theme-children="#content" />
+        <!-- Copy over the contents of the page body -->
+        <replace css:content-children="#viewlet-above-content" css:theme-children="#above-content" />
+        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#viewlet-below-content" css:theme-children="#below-content" />
 
         <!-- Edit bar -->
         <before css:content="#edit-bar" css:theme="#content" />
-        
-        <before css:content=".portalMessage" css:theme="#document-content" />
-        <replace css:content-children="#viewlet-below-content"
-            css:theme-children="#below-content" />
 
         <!-- Columns -->
         <replace css:content-children="#portal-column-one > *"

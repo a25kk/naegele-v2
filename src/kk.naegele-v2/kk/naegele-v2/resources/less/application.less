@@ -69,7 +69,8 @@ body {
 .navbar .nav > li > a {
     color: #000000;
     line-height: 20px;
-    padding: @line-height-base / 2 @line-height-base - 15;
+    padding: 5px  @line-height-base - 15 10px @line-height-base - 15;
+    border: 0px solid red;
 }
 
 #main-nav {
@@ -84,9 +85,23 @@ body {
 }
 
 #above-content {
-  border: 1px solid red !important;
-  display: inline-block;
-  height: 300px;
+  border: 0px solid red !important;
+}
+
+#above-content #portal-breadcrumbs {
+  display: none;
+}
+
+// CAROUSEL
+
+.carousel-text {
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    padding: 0%;
+    position: absolute;
+    width: 100%;
+
 }
 
 #portlets-below {
