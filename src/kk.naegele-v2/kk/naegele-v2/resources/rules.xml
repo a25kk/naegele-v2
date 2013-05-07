@@ -74,6 +74,10 @@
         <replace css:content="#portal-globalnav li"
             css:theme-children="#main-nav" />
 
+        <!-- Breadcrumbs -->
+        <replace css:content-children='#portal-breadcrumbs'
+            css:theme-children='#breadcrumbs' />
+
         <replace css:content-children="#bannerbar" 
             css:theme-children="#intro-content"
             css:if-content="#bannerbar" />
