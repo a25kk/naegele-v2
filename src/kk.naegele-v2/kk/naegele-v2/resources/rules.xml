@@ -11,6 +11,8 @@
 
     <theme href="frontpage.html" css:if-content="body.section-front-page" />
     <theme href="parfums.html" css:if-content="body.section-news-parfums" />
+    <theme href="cosmetics.html" css:if-content="body.section-news-cosmetics" />
+    <theme href="makeup.html" css:if-content="body.section-news-aus-der-glamouroesen-make-up-welt" />
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">

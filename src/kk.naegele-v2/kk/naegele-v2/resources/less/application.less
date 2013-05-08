@@ -71,6 +71,11 @@ body {
     border: 0px solid red;
 }
 
+
+.selected a {
+    color: #fff !important;
+}
+
 #main-nav {
   font-family: @headings-font-family;
   text-transform: uppercase;
@@ -94,10 +99,19 @@ body {
       padding: @line-height-base / 2 @line-height-base / 2@line-height-base / 2 0 ;
       vertical-align: top;
     }
+
+    .year {
+      font-family: @headings-font-family;
+      color: @brand-primary;
+      font-size: @font-size-mini + 6;
+    }
   }
 }
 
-.section-news-parfums .documentFirstHeading {
+.section-news-parfums .documentFirstHeading,
+.section-news-cosmetics .documentFirstHeading,
+.section-news-aus-der-glamouroesen-make-up-welt .documentFirstHeading,
+.section-behandlungen .documentFirstHeading {
   display: none;
 }
 
@@ -131,7 +145,9 @@ body {
   text-transform: uppercase;
 }
 
-.section-news-parfums #heading {
+.section-news-parfums #heading,
+.section-news-cosmetics #heading,
+.section-news-aus-der-glamouroesen-make-up-welt #heading {
   margin-top: 0;
 }
 
@@ -153,7 +169,14 @@ body {
   text-decoration: underline;
 }
 
-
+#heading .col-span-12 {
+  padding: @line-height-base;
+  background: linear-gradient(to right, #E04994 0%, #E572A8 100%) repeat scroll 0 0 transparent;
+  color: white !important;
+  height: 150px;
+  text-align: left;
+  text-decoration: underline;
+}
 
 
 // PC PORTLETS 
@@ -206,7 +229,7 @@ body {
 // MARKEN
 
 .marken {
-    margin: 0px auto !important;
+    margin: @line-height-base 0 0 0 !important;
 }
 .marke {
     border: 1px solid #efefef !important;
