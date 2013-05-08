@@ -34,7 +34,7 @@ body {
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 
       h1, h2, h3, h4 {
-        color: #E04994 !important;
+        color: #E04994;
         text-transform: uppercase;
         text-decoration: underline;
       }
@@ -140,7 +140,7 @@ body {
 .marken {
     margin: 20px 0 0;
 }
-.label {
+.marke {
     border: 1px solid #EFEFEF !important;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 2px 2px 2px #EFEFEF;
@@ -148,16 +148,16 @@ body {
     margin: 0 42px 28px 0;
     padding: 13px;
 }
-.label img {
+.marke img {
     height: 78px;
     width: 114px;
 }
-.label a {
+.marke a {
     height: 78px;
     opacity: 0.5;
     width: 114px;
 }
-.label a:hover {
+.marke a:hover {
     opacity: 1;
 }
 
@@ -190,9 +190,43 @@ body {
 }
 
 
-// Example styles for a HMTL5 based site footer
-body > footer {
-    margin-top: @line-height-base;
-    padding: @line-height-base 0;
-    border-top: 1px solid @grayLighter;
+#site-footer {
+  p {
+    text-align: center;
+    font-size: @font-size-mini;
+    text-transform: uppercase;
+    padding-top: @line-height-base;
+  }
+}
+
+.doormat {
+  border: 0px solid red;
+  background: -moz-linear-gradient(center top , #D6D6D6, #E8E8E8) repeat scroll 0 0 transparent;
+  padding: @line-height-base;
+
+  h4 {
+    color: black !important;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: @font-size-mini - 1;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    line-height: @line-height-base * 1.5;
+  }
+}
+
+.col-span-4 {
+  border: 0px solid black;
+  padding-left: 0;
+  padding-right: @line-height-base; 
+}
+
+.last {
+  padding-right: 0 !important; 
 }
