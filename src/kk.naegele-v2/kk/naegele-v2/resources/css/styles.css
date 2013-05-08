@@ -5566,6 +5566,7 @@ body #wrapper {
 }
 body #wrapper #shadow {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 body #wrapper #shadow h1,
 body #wrapper #shadow h2,
@@ -5646,14 +5647,14 @@ body #wrapper #shadow #edit-bar {
   width: 320px;
 }
 .marken {
-  margin: 20px 0 0;
+  margin: 0px auto !important;
 }
 .marke {
-  border: 1px solid #EFEFEF !important;
+  border: 1px solid #efefef !important;
   border-radius: 5px 5px 5px 5px;
-  box-shadow: 2px 2px 2px #EFEFEF;
+  box-shadow: 2px 2px 2px #efefef;
   float: left;
-  margin: 0 42px 28px 0;
+  margin: 0 40px 28px 0;
   padding: 13px;
 }
 .marke img {
