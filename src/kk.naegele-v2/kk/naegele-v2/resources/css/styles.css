@@ -5575,6 +5575,7 @@ body #wrapper #shadow h4 {
   color: #E04994;
   text-transform: uppercase;
   text-decoration: underline;
+  margin-top: 12.5px;
 }
 body #wrapper #shadow h1 {
   font-size: 32px;
@@ -5608,6 +5609,20 @@ body #wrapper #shadow #edit-bar {
   border: 0px solid red;
   padding: 0 25px;
 }
+#content p {
+  font-size: 14px;
+  margin: 0;
+}
+#content table {
+  font-size: 14px;
+}
+#content table td {
+  padding: 12.5px 12.5px 12.5px 0;
+  vertical-align: top;
+}
+.section-news-parfums .documentFirstHeading {
+  display: none;
+}
 #above-content {
   border: 0px solid red !important;
 }
@@ -5624,6 +5639,31 @@ body #wrapper #shadow #edit-bar {
 }
 .carousel-text p {
   margin: 0px;
+}
+#heading {
+  margin-top: 25px;
+  font-family: Times;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.section-news-parfums #heading {
+  margin-top: 0;
+}
+#heading .col-span-4 {
+  padding: 25px;
+  background: linear-gradient(to right, #ce8cb0 0%, #d6a0bd 100%) repeat scroll 0 0 transparent;
+  color: white !important;
+  height: 150px;
+  text-align: left;
+  text-decoration: underline;
+}
+#heading .col-span-8 {
+  padding: 25px;
+  background: linear-gradient(to right, #e04994 0%, #e572a8 100%) repeat scroll 0 0 transparent;
+  color: white !important;
+  height: 150px;
+  text-align: left;
+  text-decoration: underline;
 }
 .AbovePortletManager1,
 .BelowPortletManager1,

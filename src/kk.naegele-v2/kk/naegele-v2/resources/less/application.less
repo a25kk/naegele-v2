@@ -38,6 +38,7 @@ body {
         color: #E04994;
         text-transform: uppercase;
         text-decoration: underline;
+        margin-top: @line-height-base / 2;
       }
 
       h1 {
@@ -71,7 +72,7 @@ body {
 }
 
 #main-nav {
-  font-family: Times;
+  font-family: @headings-font-family;
   text-transform: uppercase;
   font-size: @font-size-small - 1;
   color: @gray;
@@ -80,6 +81,24 @@ body {
 #content {
   border: 0px solid red;
   padding: 0 @line-height-base;
+
+  p {
+      font-size: @font-size-mini + 2;
+      margin: 0;
+    }
+
+  table {
+    font-size: @font-size-mini + 2;
+
+    td {
+      padding: @line-height-base / 2 @line-height-base / 2@line-height-base / 2 0 ;
+      vertical-align: top;
+    }
+  }
+}
+
+.section-news-parfums .documentFirstHeading {
+  display: none;
 }
 
 #above-content {
@@ -104,6 +123,40 @@ body {
       margin: 0px;
     }
 }
+
+#heading {
+  margin-top: @line-height-base;
+  font-family: @headings-font-family;
+  font-size: @font-size-large + 4;
+  text-transform: uppercase;
+}
+
+.section-news-parfums #heading {
+  margin-top: 0;
+}
+
+#heading .col-span-4 {
+  padding: @line-height-base;
+  background: linear-gradient(to right, #CE8CB0 0%, #D6A0BD 100%) repeat scroll 0 0 transparent;
+  color: white !important;
+  height: 150px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+#heading .col-span-8 {
+  padding: @line-height-base;
+  background: linear-gradient(to right, #E04994 0%, #E572A8 100%) repeat scroll 0 0 transparent;
+  color: white !important;
+  height: 150px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+
+
+
+// PC PORTLETS 
 
 .AbovePortletManager1,
 .BelowPortletManager1,
@@ -138,7 +191,7 @@ body {
 
 .section-behandlungen .item_description {
   color: #E04994 !important;
-  font-family: Times;
+  font-family: @headings-font-family;
   text-transform: uppercase;
 }
 
@@ -178,7 +231,7 @@ body {
 
 
 
-// Some eample styles for portlets
+// Some styles for portlets
 
 .portlet {
   .portletHeader {
@@ -216,7 +269,7 @@ body {
     border: 0 none;
     border-radius: 3px;
     color: white;
-    font-family: Times;
+    font-family: @headings-font-family;
     margin: 0;
     padding: 5px 5px 3px 5px;
     text-align: left !important;
