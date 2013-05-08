@@ -15,7 +15,9 @@
                       text python:context.CookedBody(stx_level=2);
                       len_text python:len(text.strip())">
 
+        <div class="news-standalone">
         <img tal:replace="structure context/@@images/image" />
+        </div>
 
         <h1 class="documentFirstHeading" tal:content="context/Title" />
 
@@ -35,7 +37,7 @@
              tal:attributes="class python:test(context.Format() in ('text/structured',
                                                    'text/x-rst', ), 'stx' + kss_class, 'plain' + kss_class)">
             <div metal:define-slot="inside" tal:replace="structure text">The body</div>
-<div class="back"><a href="javascript: history.go(-1)">zurück zur Übersicht</a></div>
+            <div class="back"><a href="javascript: history.go(-1)">zurück zur Übersicht</a></div>
         </div>
     </metal:block>
 </metal:content-core>

@@ -5599,8 +5599,11 @@ body #wrapper #shadow #edit-bar {
   padding: 5px 10px 10px 10px;
   border: 0px solid red;
 }
-.selected a {
-  color: #fff !important;
+#main-nav .selected a {
+  color: #fff;
+}
+#contentview-view .selected a {
+  color: black;
 }
 #main-nav {
   font-family: Times;
@@ -5657,6 +5660,10 @@ body #wrapper #shadow #edit-bar {
   font-size: 24px;
   text-transform: uppercase;
 }
+.portaltype-news-item #heading,
+.portaltype-news-item #below-content {
+  display: none;
+}
 .section-news-parfums #heading,
 .section-news-cosmetics #heading,
 .section-news-aus-der-glamouroesen-make-up-welt #heading {
@@ -5685,6 +5692,27 @@ body #wrapper #shadow #edit-bar {
   height: 150px;
   text-align: left;
   text-decoration: underline;
+}
+.news-standalone {
+  border: 0px solid red !important;
+  width: 640px;
+  height: 360px;
+  margin: 0px 0px 0px -25px !important;
+}
+.back {
+  margin: 0 0 25px 0;
+}
+.back a {
+  font-size: 12px;
+  background: #E04994;
+  border: 0 none;
+  border-radius: 3px;
+  color: white;
+  font-family: Times;
+  margin: 0;
+  padding: 5px 5px 3px 5px;
+  text-align: left !important;
+  text-transform: uppercase;
 }
 .AbovePortletManager1,
 .BelowPortletManager1,
