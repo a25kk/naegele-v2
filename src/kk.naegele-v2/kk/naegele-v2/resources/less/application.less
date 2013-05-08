@@ -112,6 +112,10 @@ body {
   }
 }
 
+#sidebar {
+  border: 0px solid red;
+}
+
 .section-news-parfums .documentFirstHeading,
 .section-news-cosmetics .documentFirstHeading,
 .section-news-aus-der-glamouroesen-make-up-welt .documentFirstHeading,
@@ -187,6 +191,21 @@ body {
   text-decoration: underline;
 }
 
+.news .col-span-8,
+.news .col-span-4 {
+  padding: 0px !important;
+}
+
+.box {
+  padding: @line-height-base * 3 @line-height-base ;
+  background: linear-gradient(to right, #90387E 0%, #B972A2 100%) repeat scroll 0 0 transparent;
+
+  h3 {
+    color: white !important;
+  }
+  
+}
+
 .news-standalone {
   border: 0px solid red !important;
   width: 640px;
@@ -195,7 +214,7 @@ body {
 }
 
 .back {
-    margin: 0 0 @line-height-base 0;
+    margin: @line-height-base 0;
 }
 
 .back a {

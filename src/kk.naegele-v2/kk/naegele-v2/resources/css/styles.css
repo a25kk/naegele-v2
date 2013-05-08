@@ -5631,6 +5631,9 @@ body #wrapper #shadow #edit-bar {
   color: #e04994;
   font-size: 18px;
 }
+#sidebar {
+  border: 0px solid red;
+}
 .section-news-parfums .documentFirstHeading,
 .section-news-cosmetics .documentFirstHeading,
 .section-news-aus-der-glamouroesen-make-up-welt .documentFirstHeading,
@@ -5693,6 +5696,17 @@ body #wrapper #shadow #edit-bar {
   text-align: left;
   text-decoration: underline;
 }
+.news .col-span-8,
+.news .col-span-4 {
+  padding: 0px !important;
+}
+.box {
+  padding: 75px 25px;
+  background: linear-gradient(to right, #90387e 0%, #b972a2 100%) repeat scroll 0 0 transparent;
+}
+.box h3 {
+  color: white !important;
+}
 .news-standalone {
   border: 0px solid red !important;
   width: 640px;
@@ -5700,7 +5714,7 @@ body #wrapper #shadow #edit-bar {
   margin: 0px 0px 0px -25px !important;
 }
 .back {
-  margin: 0 0 25px 0;
+  margin: 25px 0;
 }
 .back a {
   font-size: 12px;
