@@ -5625,21 +5625,11 @@ body #wrapper #shadow #edit-bar {
 .carousel-text p {
   margin: 0px;
 }
-#portlets-below {
-  border: 0px solid red !important;
-}
-.BelowPortletManager1 {
-  border: 0 none;
-  float: left;
-  margin: 0;
-  width: 320px;
-}
-.BelowPortletManager2 {
-  border: 0 none;
-  float: left;
-  margin: 0;
-  width: 320px;
-}
+.AbovePortletManager1,
+.BelowPortletManager1,
+.AbovePortletManager2,
+.BelowPortletManager2,
+.AbovePortletManager3,
 .BelowPortletManager3 {
   border: 0 none;
   float: left;
@@ -5652,10 +5642,19 @@ body #wrapper #shadow #edit-bar {
 .item_title {
   color: #58595b !important;
 }
+.section-behandlungen .item_title {
+  font-size: 20.6px;
+  line-height: 25px;
+}
 .item_description {
   color: #58595b !important;
   font-size: 13.6px;
-  line-height: 1.4em;
+  line-height: 25px;
+}
+.section-behandlungen .item_description {
+  color: #E04994 !important;
+  font-family: Times;
+  text-transform: uppercase;
 }
 #parent-fieldname-text .invisible {
   visibility: visible !important;
@@ -5684,24 +5683,40 @@ body #wrapper #shadow #edit-bar {
   opacity: 1;
 }
 .portlet .portletHeader {
-  font-size: 24px;
-  padding: 11px 14px;
-  border-bottom: 1px solid #999999;
+  display: none;
 }
 .portlet .portletItem {
   padding: 11px 14px;
+  margin-top: 25px;
+}
+.portlet .portletItem ul {
+  list-style: none;
+  margin-left: 0px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+.portlet .portletItem p {
+  font-size: 14px;
+  margin: 0;
+}
+.portlet .portletItem h4 {
+  color: #58595b !important;
 }
 .portlet .portletFooter {
-  padding: 11px 14px;
-  font-size: 13.6px;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 50px;
 }
-.tileItem {
-  overflow: hidden;
-  zoom: 1;
-  margin-top: 15px;
-}
-.tileItem .tileHeadline {
-  margin: 0 0 5px;
+.portlet .portletFooter a {
+  font-size: 12px;
+  background: #E04994;
+  border: 0 none;
+  border-radius: 3px;
+  color: white;
+  font-family: Times;
+  margin: 0;
+  padding: 5px 5px 3px 5px;
+  text-align: left !important;
+  text-transform: uppercase;
 }
 #site-footer p {
   text-align: center;

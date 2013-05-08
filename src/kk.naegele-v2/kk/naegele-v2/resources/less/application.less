@@ -105,26 +105,12 @@ body {
     }
 }
 
-#portlets-below {
-  border: 0px solid red !important;
-
-}
-
-.BelowPortletManager1 {
-    border: 0 none;
-    float: left;
-    margin: 0;
-    width: 320px;
-}
-
-.BelowPortletManager2 {
-    border: 0 none;
-    float: left;
-    margin: 0;
-    width: 320px;
-}
-
-.BelowPortletManager3 {
+.AbovePortletManager1,
+.BelowPortletManager1,
+.AbovePortletManager2,
+.BelowPortletManager2,
+.AbovePortletManager3,
+.BelowPortletManager3  {
     border: 0 none;
     float: left;
     margin: 0;
@@ -139,10 +125,21 @@ body {
   color: @gray !important;
 }
 
+.section-behandlungen .item_title {
+  font-size: @font-size-small + 7;
+  line-height: @line-height-base; 
+}
+
 .item_description {
   color: @gray !important;
   font-size: @font-size-small;
-  line-height: 1.4em;
+  line-height: @line-height-base;
+}
+
+.section-behandlungen .item_description {
+  color: #E04994 !important;
+  font-family: Times;
+  text-transform: uppercase;
 }
 
 #parent-fieldname-text .invisible {
@@ -185,28 +182,50 @@ body {
 
 .portlet {
   .portletHeader {
-    font-size: @font-size-base * 1.5;
-    padding: @padding-large;
-    border-bottom: 1px solid @grayLight;
+    display: none;
   }
   .portletItem {
     padding: @padding-large;
+    margin-top: @line-height-base;
+
+    ul {
+      list-style: none;
+      margin-left: 0px;
+      margin-top: @line-height-base;
+      font-size: @font-size-mini;
+    }
+
+    p {
+      font-size: @font-size-mini + 2;
+      margin: 0;
+    }
+
+    h4 {
+      color: @gray !important;
+    }
   }
+
   .portletFooter {
-    padding: @padding-large;
-    font-size: @font-size-small;
+    border-bottom: 1px solid @grayLighter;
+    line-height: @line-height-base * 2;
+  }
+
+  .portletFooter a {
+    font-size: @font-size-mini;
+    background: #E04994;
+    border: 0 none;
+    border-radius: 3px;
+    color: white;
+    font-family: Times;
+    margin: 0;
+    padding: 5px 5px 3px 5px;
+    text-align: left !important;
+    text-transform: uppercase;
   }
 }
 
-// Example styles for listings (e.g. folder summary view)
 
-.tileItem {
-  .media();
-  .tileHeadline {
-    .media-heading();
-  }
-}
-
+// FOOTER
 
 #site-footer {
   p {
