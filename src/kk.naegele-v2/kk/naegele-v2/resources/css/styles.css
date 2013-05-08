@@ -1095,7 +1095,7 @@ input[type="color"] {
   padding: 6px 9px;
   font-size: 16px;
   line-height: 25px;
-  color: #555555;
+  color: #58595b;
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -2822,7 +2822,7 @@ button.close {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #58595b;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -4096,7 +4096,7 @@ a.thumbnail:focus {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #555555;
+  color: #58595b;
 }
 .media,
 .media-body {
@@ -4805,13 +4805,13 @@ select.datetime-widget,
   font-size: 20px;
   font-weight: bold;
   width: 100%;
-  color: #555555;
+  color: #58595b;
 }
 /* Emulates styling from the description's view */
 #content .field textarea[name$=".description"],
 #form-widgets-IBasic-description,
 #archetypes-fieldname-description textarea#description {
-  color: #555555;
+  color: #58595b;
   font-size: 16px;
   font-weight: bold;
   width: 100%;
@@ -5202,7 +5202,7 @@ ul.formTabs > li > a:hover {
 ul.formTabs > li.active > a,
 ul.formTabs > li.active > a:hover,
 ul.formTabs > li.active > a:focus {
-  color: #555555;
+  color: #58595b;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -5240,7 +5240,7 @@ ul.formTabs li a:hover {
   border-color: #eeeeee #eeeeee #dddddd;
 }
 ul.formTabs li a.selected {
-  color: #555555;
+  color: #58595b;
   background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -5554,7 +5554,7 @@ table.grid th {
 }
 .wireframed {
   font-family: 'redactedregular';
-  color: #555555;
+  color: #58595b;
 }
 body {
   background: url(../img/bg.gif) repeat-x 0 0 #f5f5f5;
@@ -5602,7 +5602,7 @@ body #wrapper #shadow #edit-bar {
   font-family: Times;
   text-transform: uppercase;
   font-size: 12.6px;
-  color: black;
+  color: #58595b;
 }
 #content {
   border: 0px solid red;
@@ -5645,6 +5645,20 @@ body #wrapper #shadow #edit-bar {
   float: left;
   margin: 0;
   width: 320px;
+}
+.item_title a {
+  color: #58595b !important;
+}
+.item_title {
+  color: #58595b !important;
+}
+.item_description {
+  color: #58595b !important;
+  font-size: 13.6px;
+  line-height: 1.4em;
+}
+#parent-fieldname-text .invisible {
+  visibility: visible !important;
 }
 .marken {
   margin: 0px auto !important;
