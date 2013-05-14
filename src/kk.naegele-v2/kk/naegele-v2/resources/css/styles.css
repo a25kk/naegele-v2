@@ -5685,12 +5685,19 @@ body #wrapper #shadow #edit-bar {
 .parfums a {
   color: white !important;
 }
+.makeup {
+  border-top: 3px solid #eeeeee;
+  border-left: 3px solid #eeeeee;
+}
 .big-news {
   font-size: 40px !important;
   text-transform: uppercase;
   text-decoration: underline;
   font-family: Times;
   color: white;
+}
+.red {
+  color: #e04994;
 }
 .carousel-text {
   background-color: transparent;
