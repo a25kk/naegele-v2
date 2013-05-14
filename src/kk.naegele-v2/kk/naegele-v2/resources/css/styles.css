@@ -5587,6 +5587,11 @@ body #wrapper #shadow #edit-bar {
   padding: 12.5px;
   font-size: 13.6px;
 }
+.portaltype-news-item #shadow {
+  background: url(../img/col-two.gif) repeat-y top right #ffffff !important;
+  width: 960px;
+  margin: 0 auto;
+}
 .navbar {
   background-color: transparent;
   border-radius: 0;
@@ -5630,9 +5635,6 @@ body #wrapper #shadow #edit-bar {
   font-family: Times;
   color: #e04994;
   font-size: 18px;
-}
-#sidebar {
-  border: 0px solid red;
 }
 .section-news-parfums .documentFirstHeading,
 .section-news-cosmetics .documentFirstHeading,
@@ -5685,9 +5687,11 @@ body #wrapper #shadow #edit-bar {
 .parfums a {
   color: white !important;
 }
+.cosmetic {
+  border-bottom: 2px solid #eeeeee;
+}
 .makeup {
-  border-top: 3px solid #eeeeee;
-  border-left: 3px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 .big-news {
   font-size: 40px !important;
@@ -5847,6 +5851,9 @@ body #wrapper #shadow #edit-bar {
   font-size: 12px;
   text-transform: uppercase;
   padding-top: 25px;
+  padding-bottom: 25px;
+  background: white;
+  margin-bottom: 0px;
 }
 .doormat {
   border: 0px solid red;
