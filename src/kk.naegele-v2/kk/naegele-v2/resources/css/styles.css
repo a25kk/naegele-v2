@@ -5703,6 +5703,48 @@ body #wrapper #shadow #edit-bar {
 .red {
   color: #e04994;
 }
+.context,
+.formControls .actionButtons .button,
+.documentEditable * .context,
+.standalone,
+.documentEditable * .standalone {
+  background: none repeat scroll 0 0 #E04994;
+  border: 0 none;
+  border-radius: 3px 3px 3px 3px;
+  color: white;
+  font-family: Times;
+  font-size: 1em;
+  margin: 0;
+  padding: 5px 10px 3px;
+  text-align: left !important;
+  text-transform: uppercase;
+}
+.formControls {
+  background-color: transparent;
+  border-top: 0px;
+  margin: 0;
+  padding: 25px 0 0 0;
+}
+.portaltype-formfolder #content {
+  background: none repeat scroll 0 0 #FECEE6 !important;
+  padding: 25px !important;
+}
+.section-kontakt .box {
+  height: 360px;
+  padding: 0;
+}
+.section-kontakt .documentFirstHeading {
+  display: none;
+}
+label {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+.fieldErrorBox {
+  font-size: 12px;
+}
 .carousel-text {
   background-color: transparent;
   bottom: 0;
