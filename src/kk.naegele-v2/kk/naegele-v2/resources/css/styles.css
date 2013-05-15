@@ -5561,7 +5561,7 @@ body {
 }
 body #wrapper {
   margin: 0 auto;
-  width: 960px;
+  width: 980px;
   border: 0px solid blue;
 }
 body #wrapper #shadow {
@@ -5589,7 +5589,7 @@ body #wrapper #shadow #edit-bar {
 }
 .portaltype-news-item #shadow {
   margin: 0 auto;
-  width: 960px;
+  width: 980px;
   background: url(../img/col-two.gif) repeat-y top right #ffffff !important;
 }
 .navbar {
