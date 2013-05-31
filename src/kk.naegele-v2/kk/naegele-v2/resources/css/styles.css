@@ -5567,6 +5567,9 @@ body #wrapper {
 body #wrapper #logo {
   width: 344px;
 }
+body #wrapper .container {
+  max-width: 960px !important;
+}
 body #wrapper #shadow {
   background: white;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
