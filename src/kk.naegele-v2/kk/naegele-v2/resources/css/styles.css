@@ -5569,6 +5569,7 @@ body #wrapper #logo {
 }
 body #wrapper .container {
   max-width: 960px !important;
+  padding: 0px !important;
 }
 body #wrapper #shadow {
   background: white;
