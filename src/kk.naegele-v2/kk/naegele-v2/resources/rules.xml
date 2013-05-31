@@ -14,7 +14,10 @@
     <theme href="parfums.html" css:if-content="body.section-news-parfums" />
     <theme href="cosmetics.html" css:if-content="body.section-news-cosmetics" />
     <theme href="makeup.html" css:if-content="body.section-news-aus-der-glamouroesen-make-up-welt" />
+    <theme href="marken.html" css:if-content="body.section-marken" />
+    <theme href="behandlungen.html" css:if-content="body.section-behandlungen" />
     <theme href="kontakt.html" css:if-content="body.section-kontakt" />
+    
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
@@ -88,6 +91,9 @@
         <replace css:content-children="#bannerbar" 
             css:theme-children="#intro-content"
             css:if-content="#bannerbar" />
+
+        <replace css:theme-children="#video" css:content-children="#banner"
+            href="/@@video" />
 
         <!-- Copy over the contents of the page body -->
         <replace css:content-children="#viewlet-above-content" css:theme-children="#above-content" />

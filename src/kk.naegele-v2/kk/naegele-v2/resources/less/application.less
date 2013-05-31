@@ -30,6 +30,10 @@ body {
       width: 960px;
       border: 0px solid blue;
 
+      #logo {
+        width: 344px;
+      }
+
       #shadow {
         background: white;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
@@ -386,6 +390,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce8cb0', end
 }
 
 
+/*#sidebar {
+  display: block;
+  border: 1px solid red;
+}*/
+
+
 
 
 
@@ -393,24 +403,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce8cb0', end
 
 .marken {
     margin: @line-height-base 0 0 0 !important;
+
+    .col-span-3 {
+      margin: 9px;
+      width: 23%;
+    }
 }
 .marke {
-    float: left;
-    margin: 0 40px 28px 0;
-    padding: 13px;
+    padding: 10px;
     border: 1px solid #efefef !important;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 2px 2px 2px #efefef;
+    text-align: center;
+    float: left;
 }
-.marke img {
-    width: 114px;
-    height: 78px;
-}
+
 .marke a {
-    width: 114px;
-    height: 78px;
     opacity: 0.5;
 }
+
 .marke a:hover {
     opacity: 1;
 }
