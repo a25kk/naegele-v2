@@ -27,3 +27,4 @@ src/Products.windowZ
 .DS_Store
 known-good-versions.cfg
 src/vwc.toolbar
+src/ade25.fabfiles
