@@ -5594,6 +5594,11 @@ body #wrapper #shadow #edit-bar {
   background: #999;
   font-size: 13.6px;
 }
+img {
+  height: auto;
+  max-width: none !important;
+  vertical-align: middle;
+}
 .portaltype-news-item #shadow {
   margin: 0 auto;
   width: 960px;
