@@ -15,7 +15,7 @@
                       text python:context.CookedBody(stx_level=2);
                       len_text python:len(text.strip())">
 
-        <div class="news-standalone">
+        <div tal:condition="exists:context/image" class="news-standalone">
         <img tal:replace="structure context/@@images/image" />
         </div>
 
