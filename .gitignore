@@ -36,3 +36,4 @@ src/plone.app.contenttypes
 src/ade25.fabfiles
 src/vwc.typekit
 .codeintel/
+.eggs/

@@ -13,10 +13,10 @@ env.use_ssh_config = True
 env.forward_agent = True
 env.port = '22222'
 env.user = 'root'
-env.hosts = ['z7']
+env.hosts = ['z13']
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/sites/naegele-v2/buildout.naegele-v2'
-env.local_root = '/Users/sd/dev/naegele-v2/buildout.naegele-v2'
+env.local_root = '/Users/sd/dev/naegele/buildout.naegele'
 env.sitename = 'plonesite'
 env.code_user = 'root'
 env.prod_user = 'www'
@@ -48,4 +48,4 @@ def rebuild():
 @task
 def get_data():
     """ Copy live database for local development """
-    project.db.download_data()
+    project.db.download()
