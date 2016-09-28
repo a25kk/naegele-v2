@@ -25,13 +25,39 @@
 body {
     background:url(../img/bg.gif)  repeat-x 0 0 #f5f5f5;
 
+    #topbar {
+      background:url(../img/bg.gif)  repeat-x 0 0 #f5f5f5;
+    }
+
     #wrapper {
       margin: 0 auto;
       width: 960px;
       border: 0px solid blue;
 
-      #logo {
-        width: 344px;
+      #logo-left {
+        width: 100%;
+        min-width: 344px;
+        min-height: 106px;
+        text-align: left;
+        a {
+          width: 100%;
+          height: 100%;
+          min-width: 344px;
+          min-height: 106px;
+        }
+      }
+
+      #logo-right {
+        width: 100%;
+        min-width: 344px;
+        min-height: 106px;
+        text-align: right;
+        a {
+          width: 100%;
+          height: 100%;
+          min-width: 344px;
+          min-height: 106px;
+        }
       }
 
       .container {
