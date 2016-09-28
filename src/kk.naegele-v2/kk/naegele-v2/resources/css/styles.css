@@ -5890,8 +5890,11 @@ label {
   list-style: none;
   font-size: 12px;
 }
+.portlet .portletItem li {
+  display: block;
+}
 .portlet .portletItem p {
-  margin: 0;
+  margin: 1rem 0 0 0;
   font-size: 14px;
 }
 .portlet .portletItem h4 {
